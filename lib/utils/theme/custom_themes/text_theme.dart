@@ -3,12 +3,6 @@ import 'package:flutter/material.dart';
 class TTextTheme {
   TTextTheme._(); // Private constructor to prevent instantiation
 
-  static const TextStyle _baseStyle = TextStyle(
-    fontFamily: 'Poppins',
-    fontSize: 16,
-    fontWeight: FontWeight.normal,
-  );
-
   static TextTheme lightTextTheme = const TextTheme(
     headlineLarge: TextStyle(
       fontSize: 24,
@@ -39,7 +33,8 @@ class TTextTheme {
 
   static TextTheme darkTextTheme = TextTheme(
     headlineLarge: lightTextTheme.headlineLarge!.copyWith(color: Colors.white),
-    headlineMedium: lightTextTheme.headlineMedium!.copyWith(color: Colors.white70),
+    headlineMedium:
+        lightTextTheme.headlineMedium!.copyWith(color: Colors.white70),
     bodyLarge: lightTextTheme.bodyLarge!.copyWith(color: Colors.white70),
     labelLarge: lightTextTheme.labelLarge,
     bodyMedium: lightTextTheme.bodyMedium!.copyWith(color: Colors.grey[400]),
